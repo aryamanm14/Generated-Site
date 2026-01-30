@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryaman Majumder | Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; color: #f1f5f9; line-height: 1.8; }
+        .nav-link { position: relative; transition: color 0.3s ease; }
+        .nav-active { color: #3b82f6; }
+        .nav-active::after { content: ''; position: absolute; bottom: -6px; left: 0; width: 100%; height: 2px; background: #3b82f6; border-radius: 2px; }
+        .glass-card { background: rgba(15, 23, 42, 0.4); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.03); }
+        .hero-glow { background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.12) 0%, transparent 60%); }
+        .text-gradient { background: linear-gradient(135deg, #fff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        a.project-link { display: block; padding: 1.5rem; border-radius: 1.5rem; background-color: rgba(59, 130, 246, 0.1); text-align: center; font-weight: bold; color: #3b82f6; transition: all 0.3s ease; }
+        a.project-link:hover { background-color: #3b82f6; color: white; transform: translateY(-4px); }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-900/50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#home" class="text-xl font-extrabold tracking-tighter text-white">ARYAMAN<span class="text-blue-500">.</span></a>
+            <div class="hidden md:flex space-x-10 text-[11px] font-bold uppercase tracking-[0.3em] text-slate-400">
+                <a href="#home" class="nav-link hover:text-white transition">Home</a>
+                <a href="#about" class="nav-link hover:text-white transition">About</a>
+                <a href="#projects" class="nav-link hover:text-white transition">Projects</a>
+                <a href="#resume" class="nav-link hover:text-white transition">Resume</a>
+                <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center px-6 relative hero-glow overflow-hidden">
+        <div class="max-w-4xl text-center z-10">
+            <h2 class="text-blue-500 font-mono text-xs tracking-[0.4em] uppercase mb-6 animate-pulse">Building from the ground up</h2>
+            <h1 class="text-6xl md:text-9xl font-extrabold tracking-tighter mb-8 text-gradient">
+                Aryaman Majumder
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
+                A student-developer dedicated to <span class="text-white">problem solving</span>, specialized in <span class="text-white">Python</span> and <span class="text-white">C++</span>.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-5 justify-center">
+                <a href="#about" class="px-10 py-4 bg-white text-slate-950 rounded-2xl font-bold hover:bg-blue-500 hover:text-white transition-all transform hover:-translate-y-1 shadow-2xl shadow-blue-500/10">Read My Story</a>
+                <a href="#contact" class="px-10 py-4 glass-card rounded-2xl font-bold hover:bg-slate-800 transition-all border border-slate-700/50">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 bg-slate-950/40">
+        <div class="max-w-5xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-12 tracking-tight">The Journey So Far</h2>
+            <div class="space-y-8 text-slate-300 text-lg md:text-xl">
+                <p>
+                    Hi, I’m <span class="text-white font-bold underline underline-offset-8 decoration-blue-500/40">Aryaman Majumder</span>, a high school student who discovered early that code is more than text—it’s a tool for creation and problem-solving.
+                </p>
+                <p>
+                    Over the past <span class="text-white font-semibold italic">three years</span>, I have immersed myself in <span class="text-blue-400 font-bold">Python</span> for rapid development, AI, and practical applications. Alongside, I have spent <span class="text-white font-semibold italic">two years</span> mastering <span class="text-indigo-400 font-bold">C++</span> for efficiency and performance-focused software.
+                </p>
+                <p>
+                    I enjoy tackling challenges in <span class="text-white font-semibold">algorithms, AI, and software development</span>, creating solutions from scratch that work in the real world.
+                </p>
+                <p>
+                    My approach is growth-oriented: experimenting with projects, optimizing algorithms, and learning new technologies to continually improve as a developer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-4">Core Projects</h2>
+                <div class="h-1 w-20 bg-blue-600 rounded"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="glass-card p-6 rounded-3xl group hover:border-blue-500/30 transition-all duration-500">
+                    <a href="https://docs.google.com/document/d/1DAq0iWz8WehDJ12hnf-UOYOk_j40i-7_j-eL5IRAnIk/edit?tab=t.0" target="_blank" class="project-link">View Python Solutions Project</a>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">Python Solutions</h3>
+                    <p class="text-slate-400 mb-6">Real-world utilities and automation tools leveraging 3 years of Python experience for effective and practical applications.</p>
+                    <div class="flex gap-4 text-xs font-bold text-slate-500">
+                        <span>AUTOMATION</span> <span>•</span> <span>LIBRARIES</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card p-6 rounded-3xl group hover:border-indigo-500/30 transition-all duration-500">
+                    <a href="https://docs.google.com/document/d/1DAq0iWz8WehDJ12hnf-UOYOk_j40i-7_j-eL5IRAnIk/edit?tab=t.0" target="_blank" class="project-link">View C++ Algorithms Project</a>
+                    <h3 class="text-2xl font-bold mt-4 mb-4">C++ Algorithms</h3>
+                    <p class="text-slate-400 mb-6">Performance-heavy applications where memory management, speed, and computational efficiency are the focus.</p>
+                    <div class="flex gap-4 text-xs font-bold text-slate-500">
+                        <span>SYSTEMS</span> <span>•</span> <span>EFFICIENCY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-32 bg-slate-900/20">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold mb-16">Background & Skills</h2>
+            <div class="space-y-16">
+                <div class="relative pl-12 border-l-2 border-slate-800">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-500 rounded-full border-4 border-slate-950"></div>
+                    <h4 class="text-xl font-bold mb-4">Student & Aspiring Software Engineer</h4>
+                    <p class="text-slate-400 mb-6 italic">Current Focus</p>
+                    <p class="text-slate-400 text-lg leading-relaxed">
+                        Building a strong foundation for software engineering, mastering algorithms, and developing practical projects for real-world applications.
+                    </p>
+                </div>
+
+                <div class="relative pl-12 border-l-2 border-slate-800">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-indigo-500 rounded-full border-4 border-slate-950"></div>
+                    <h4 class="text-xl font-bold mb-4">Technical Proficiency</h4>
+                    <p class="text-slate-400 mb-6 italic">Skill Evolution</p>
+                    <p class="text-slate-400 text-lg leading-relaxed mb-6">
+                        3 years of Python and 2 years of C++ experience. Python for AI, automation, and utilities; C++ for high-performance, memory-efficient solutions.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 glass-card rounded-xl text-xs font-bold tracking-widest text-blue-400 uppercase">Python</span>
+                        <span class="px-4 py-2 glass-card rounded-xl text-xs font-bold tracking-widest text-indigo-400 uppercase">C++</span>
+                        <span class="px-4 py-2 glass-card rounded-xl text-xs font-bold tracking-widest text-white uppercase">AI / ML</span>
+                        <span class="px-4 py-2 glass-card rounded-xl text-xs font-bold tracking-widest text-white uppercase">Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32">
+        <div class="max-w-xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-extrabold mb-6">Let's Connect</h2>
+            <p class="text-slate-400 mb-12 text-lg">
+                I’m always open to discussing projects, technologies, or software challenges. You can also reach me directly at <a href="mailto:majumder9583@mydusd.org" class="text-blue-500 underline">majumder9583@mydusd.org</a>.
+            </p>
+            <form class="space-y-4 text-left glass-card p-10 rounded-3xl">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Name" class="w-full p-4 rounded-xl bg-slate-900/50 border border-slate-800 focus:outline-none focus:border-blue-500 transition">
+                    <input type="email" placeholder="Email" class="w-full p-4 rounded-xl bg-slate-900/50 border border-slate-800 focus:outline-none focus:border-blue-500 transition" value="majumder9583@mydusd.org">
+                </div>
+                <textarea rows="5" placeholder="Message" class="w-full p-4 rounded-xl bg-slate-900/50 border border-slate-800 focus:outline-none focus:border-blue-500 transition"></textarea>
+                <button class="w-full bg-blue-600 py-4 rounded-xl font-bold hover:bg-blue-500 transition shadow-xl shadow-blue-900/20">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-900/50 text-center text-slate-600 text-[10px] font-bold tracking-[0.4em] uppercase">
+        &copy; 2026 Aryaman Majumder | Designed for Impact
+    </footer>
+
+    <!-- Scroll Highlight Script -->
+    <script>
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        window.addEventListener("scroll", () => {
+            let current = "";
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 200) current = section.getAttribute("id");
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove("nav-active");
+                if (link.getAttribute("href").includes(current)) link.classList.add("nav-active");
+            });
+        });
+    </script>
+</body>
+</html>
